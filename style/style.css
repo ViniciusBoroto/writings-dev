@@ -135,3 +135,51 @@ header p {
     color: white;
     background-color: var(--bgColor);
 }
+
+.articles-grid {
+    width: 85vw;
+    margin: 50px auto;
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.articles-grid article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.articles-grid article * {
+    color: 
+    #0F1217;
+}
+
+.articles-grid article h1 {
+    font-size: 1.2em;
+    margin-top: 1.5em;
+    margin-bottom: .75em;
+}
+
+.article-preview {
+    font-size: 1em;
+}
+
+.article-footer {
+    display: flex;
+    align-items: center;
+} 
+
+.article-grid article span {
+    padding: 2px 15px;
+}
+
+.material-symbols-outlined {
+    font-size: 5px;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
