@@ -39,6 +39,7 @@ body {
     background-color: var(--bgColor);
 }
 
+
 .header-container {
     display: flex;
     flex-direction: column;
@@ -137,7 +138,7 @@ header p {
 }
 
 .articles-grid {
-    width: 85vw;
+    width: 75vw;
     margin: 50px auto;
 
     display: grid;
@@ -156,6 +157,10 @@ header p {
     #0F1217;
 }
 
+.articles-grid article img {
+    width: 100%;
+}
+
 .articles-grid article h1 {
     font-size: 1.2em;
     margin-top: 1.5em;
@@ -169,14 +174,15 @@ header p {
 .article-footer {
     display: flex;
     align-items: center;
+
+    margin-top: 1.5rem;
+    margin-bottom: .2rem;
 } 
 
-.article-grid article span {
-    padding: 2px 15px;
-}
-
 .material-symbols-outlined {
+    padding: 0px 1.2rem;
     font-size: 5px;
+
     font-variation-settings:
     'FILL' 1,
     'wght' 400,
