@@ -132,6 +132,7 @@ header p {
     border-radius: 10px;
 
     cursor: pointer;
+    transition: .15s;
 }
 
 .category-nav-container .categories-container li:hover {
@@ -232,7 +233,12 @@ footer {
     width: 75vw;
     margin: auto;
     padding: 1.5rem 0px 5rem 0px ;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer p {
+    margin-right: 15px;
 }
 
 footer .button {
@@ -240,6 +246,24 @@ footer .button {
     padding: 3px 10px;
     background-color: #4699E0;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    box-shadow: 2px 2px 1px rgba(255, 255, 255, 0.473);
+
+    transition: .15s;
+}
+
+footer .button:hover {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+footer .button img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
 }
 
 footer .twitter {
@@ -248,10 +272,6 @@ footer .twitter {
 
 footer .github {
     background-color: rgb(59, 59, 59);
-}
-
-footer #kamrify-twitter {
-
 }
 
 footer #viniciusboroto-github {
