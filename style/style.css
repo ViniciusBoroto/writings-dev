@@ -52,11 +52,20 @@ body {
 
 .header-top-container {
     display: flex;
+    align-items: center;
     width: 100%;
 }
 
 .header-top-container .top-header-logo {
     text-decoration: none;
+    font-size: 1.5rem;
+
+    transition: .1s;
+}
+
+.header-top-container .top-header-logo:hover {
+    scale: 1.05;
+    transition-timing-function: ease;
 }
 
 .header-top-container > nav {
@@ -73,6 +82,12 @@ body {
 
 .header-top-container > nav a {
     text-decoration: none;
+    transition: .1s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.header-top-container > nav a:hover {
+    transform: scale(1.05);
 }
 
 .logo-img {
@@ -115,8 +130,16 @@ header p {
 }
 
 .category-icons-container img {
-    margin-right: 10px;
     fill: black;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 5px;
+
+    transition: .1s;
+}
+
+.category-icons-container img:hover {
+    background-color: rgba(0, 0, 0, 0.39);
 }
 
 .category-nav-container .categories-container {
@@ -132,7 +155,7 @@ header p {
     border-radius: 10px;
 
     cursor: pointer;
-    transition: .15s;
+    transition: .1s;
 }
 
 .category-nav-container .categories-container li:hover {
@@ -153,6 +176,7 @@ header p {
     background-color: white;
     padding: 20px;
     border-radius: 20px;
+    box-shadow: 2px 2px 4px black;
 
     display: flex;
     flex-direction: column;
@@ -223,6 +247,11 @@ header p {
     border-top: 3px solid #FF7575;
 }
 
+.pagination a:not(.selected):hover {
+    color: white;
+    transition: color .1s;
+}
+
 footer {
     margin-top: 5rem;
     border-top: 1px solid #4D4D4D;
@@ -253,6 +282,7 @@ footer .button {
     box-shadow: 2px 2px 1px rgba(255, 255, 255, 0.473);
 
     transition: .15s;
+    transition-timing-function: ease;
 }
 
 footer .button:hover {
