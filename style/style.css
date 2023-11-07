@@ -45,7 +45,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30px 50px;
+    margin: 40px auto;
+    width: 75vw;
     font-size: 1em;
 }
 
@@ -115,6 +116,7 @@ header p {
 
 .category-icons-container img {
     margin-right: 10px;
+    fill: black;
 }
 
 .category-nav-container .categories-container {
@@ -150,6 +152,11 @@ header p {
     background-color: white;
     padding: 20px;
     border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    width: 100% ;
+    height: 100%;
 }
 
 .articles-grid article * {
@@ -169,13 +176,14 @@ header p {
 
 .article-preview {
     font-size: 1em;
+    margin-bottom: 1em;
 }
 
 .article-footer {
     display: flex;
     align-items: center;
 
-    margin-top: 1.5rem;
+    margin-top: auto;
     margin-bottom: .2rem;
 } 
 
@@ -188,4 +196,64 @@ header p {
     'wght' 400,
     'GRAD' 0,
     'opsz' 24
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 25vw;
+    margin: auto;
+
+    list-style-type: none;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: var(--secondaryColor);
+    font-size: 1.2em;
+
+    border-top:3px solid var(--bgColor);
+    padding: 5px 12px;
+}
+
+.pagination .selected {
+    color: var(--primaryColor);
+    border-top: 3px solid #FF7575;
+}
+
+footer {
+    margin-top: 5rem;
+    border-top: 1px solid #4D4D4D;
+}
+
+.footer-container {
+    display: flex;
+    width: 75vw;
+    margin: auto;
+    padding: 1.5rem 0px 5rem 0px ;
+    align-items: flex-start;
+}
+
+footer .button {
+    text-decoration: none;
+    padding: 3px 10px;
+    background-color: #4699E0;
+    border-radius: 5px;
+}
+
+footer .twitter {
+    background-color: black;
+}
+
+footer .github {
+    background-color: rgb(59, 59, 59);
+}
+
+footer #kamrify-twitter {
+
+}
+
+footer #viniciusboroto-github {
+    margin-left: auto;
 }
