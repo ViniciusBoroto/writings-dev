@@ -326,6 +326,10 @@ footer .github {
     background-color: rgb(59, 59, 59);
 }
 
+footer p {
+    font-size: 1.5rem;
+}
+
 footer #viniciusboroto-github {
     margin-left: auto;
 }

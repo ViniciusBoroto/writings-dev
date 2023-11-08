@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 1500px) {
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .button {
+        margin: 15px;
+        padding: 25px;
+    }
+
+    footer #viniciusboroto-github {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 1.2rem;
+    }
+
+    .articles-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
