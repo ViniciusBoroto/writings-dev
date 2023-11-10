@@ -23,9 +23,13 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-    * {
-        font-size: 1.2rem;
+@media only screen and (max-width: 1030px) {
+    .header-top-container > nav > .hamburger-btn {
+        display: block;
+    }
+
+    .header-top-container > nav > ul {
+        display: none;
     }
 
     .articles-grid {
