@@ -82,9 +82,8 @@ body {
     display: none;
 }
 
-.header-top-container > nav > .hamburger-btn span {
-    font-size: 2rem;
-    padding: 0px;
+#nav-list-2 {
+    display: none;
 }
 
 .header-top-container > nav > ul {

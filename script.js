@@ -1,10 +1,14 @@
-const navList = document.getElementById('nav-list')
 
 function hamburgerMenuClick() {
-    if (navList.style.display == 'none') {
-        navList.style.display = 'block'
+    const navList2 = document.getElementById('nav-list-2-container')
+    const burgerIcon = document.getElementById('burger-icon')
+
+    if (navList2.style.display == 'none') {
+        navList2.style.display = 'flex'
+        burgerIcon.innerHTML = 'close'
     }   else {
-        navList.style.display = 'none'
+        navList2.style.display = 'none'
+        burgerIcon.innerHTML = 'menu'
         }
 }
 
