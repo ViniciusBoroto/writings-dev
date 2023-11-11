@@ -39,14 +39,19 @@ body {
     background-color: var(--bgColor);
 }
 
+.width-centralize-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
+} 
 
 .header-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 40px auto;
-    width: 75vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     font-size: 1em;
 }
 
@@ -136,11 +141,9 @@ header p {
 }
 
 .category-inside-container {
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75vw;
     overflow: hidden;
 }
 
@@ -200,7 +203,6 @@ header p {
 }
 
 .articles-grid {
-    width: 75vw;
     margin: 50px auto;
 
     display: grid;
@@ -295,8 +297,6 @@ footer {
 
 .footer-container {
     display: flex;
-    width: 75vw;
-    margin: auto;
     padding: 1.5rem 0px 5rem 0px ;
     align-items: center;
     justify-content: flex-start;

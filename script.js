@@ -11,7 +11,3 @@ function hamburgerMenuClick() {
         burgerIcon.innerHTML = 'menu'
         }
 }
-
-// function navBarChange() {
-
-// }
